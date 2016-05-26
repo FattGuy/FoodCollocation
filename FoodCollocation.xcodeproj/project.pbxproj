@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D71D4CC9DB6F81805EE650B /* Pods_FoodCollocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8860EDF2B09B313C449FEBA /* Pods_FoodCollocation.framework */; };
+		238E827C1C2D2FB673FD5ED5 /* Pods_FoodCollocationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB2B03C48970D7F6C8F1A3B /* Pods_FoodCollocationUITests.framework */; };
+		AF56A0D08BC4D4766B39C9D7 /* Pods_FoodCollocationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6013CD54540DFBF48BE7C832 /* Pods_FoodCollocationTests.framework */; };
 		F22D700C1CF77BD3007DD024 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D700B1CF77BD3007DD024 /* AppDelegate.swift */; };
 		F22D700E1CF77BD3007DD024 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D700D1CF77BD3007DD024 /* ViewController.swift */; };
 		F22D70111CF77BD3007DD024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22D700F1CF77BD3007DD024 /* Main.storyboard */; };
@@ -34,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36368EE9A13AB01A34D65B95 /* Pods-FoodCollocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocation/Pods-FoodCollocation.debug.xcconfig"; sourceTree = "<group>"; };
+		4F445EE8F04C4DA37B78E661 /* Pods-FoodCollocationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocationUITests/Pods-FoodCollocationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6013CD54540DFBF48BE7C832 /* Pods_FoodCollocationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodCollocationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB2B03C48970D7F6C8F1A3B /* Pods_FoodCollocationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodCollocationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B165A35B60F86052FADFF02A /* Pods-FoodCollocationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocationTests/Pods-FoodCollocationTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8860EDF2B09B313C449FEBA /* Pods_FoodCollocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodCollocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79BE659D65CD3875D6DF242 /* Pods-FoodCollocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocation.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocation/Pods-FoodCollocation.release.xcconfig"; sourceTree = "<group>"; };
+		DC23F74DC83213704C5B7A02 /* Pods-FoodCollocationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocationTests/Pods-FoodCollocationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F22D70081CF77BD3007DD024 /* FoodCollocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodCollocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22D700B1CF77BD3007DD024 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F22D700D1CF77BD3007DD024 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,7 @@
 		F22D70271CF77BD3007DD024 /* FoodCollocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodCollocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22D702B1CF77BD3007DD024 /* FoodCollocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollocationUITests.swift; sourceTree = "<group>"; };
 		F22D702D1CF77BD3007DD024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F627496606E6A330038B6319 /* Pods-FoodCollocationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocationUITests/Pods-FoodCollocationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D71D4CC9DB6F81805EE650B /* Pods_FoodCollocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF56A0D08BC4D4766B39C9D7 /* Pods_FoodCollocationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				238E827C1C2D2FB673FD5ED5 /* Pods_FoodCollocationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D46B57586FE390BC0C21583 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36368EE9A13AB01A34D65B95 /* Pods-FoodCollocation.debug.xcconfig */,
+				D79BE659D65CD3875D6DF242 /* Pods-FoodCollocation.release.xcconfig */,
+				DC23F74DC83213704C5B7A02 /* Pods-FoodCollocationTests.debug.xcconfig */,
+				B165A35B60F86052FADFF02A /* Pods-FoodCollocationTests.release.xcconfig */,
+				F627496606E6A330038B6319 /* Pods-FoodCollocationUITests.debug.xcconfig */,
+				4F445EE8F04C4DA37B78E661 /* Pods-FoodCollocationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F22D6FFF1CF77BD3007DD024 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				F22D701F1CF77BD3007DD024 /* FoodCollocationTests */,
 				F22D702A1CF77BD3007DD024 /* FoodCollocationUITests */,
 				F22D70091CF77BD3007DD024 /* Products */,
+				3D46B57586FE390BC0C21583 /* Pods */,
+				F26FA9C07567400F87375D97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,16 @@
 			path = FoodCollocationUITests;
 			sourceTree = "<group>";
 		};
+		F26FA9C07567400F87375D97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8860EDF2B09B313C449FEBA /* Pods_FoodCollocation.framework */,
+				6013CD54540DFBF48BE7C832 /* Pods_FoodCollocationTests.framework */,
+				ABB2B03C48970D7F6C8F1A3B /* Pods_FoodCollocationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F22D70301CF77BD3007DD024 /* Build configuration list for PBXNativeTarget "FoodCollocation" */;
 			buildPhases = (
+				C976BC60B5DB3F27E41AC2EE /* 📦 Check Pods Manifest.lock */,
 				F22D70041CF77BD3007DD024 /* Sources */,
 				F22D70051CF77BD3007DD024 /* Frameworks */,
 				F22D70061CF77BD3007DD024 /* Resources */,
+				EE03694C5005C49E27567DB8 /* 📦 Embed Pods Frameworks */,
+				5125307FDACF4A4877BF237A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F22D70331CF77BD3007DD024 /* Build configuration list for PBXNativeTarget "FoodCollocationTests" */;
 			buildPhases = (
+				F263D76998C83013CF4A2454 /* 📦 Check Pods Manifest.lock */,
 				F22D70181CF77BD3007DD024 /* Sources */,
 				F22D70191CF77BD3007DD024 /* Frameworks */,
 				F22D701A1CF77BD3007DD024 /* Resources */,
+				8F7968CF86AF5E9A36B91317 /* 📦 Embed Pods Frameworks */,
+				8F977C614A517DD82E4BA3F5 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F22D70361CF77BD3007DD024 /* Build configuration list for PBXNativeTarget "FoodCollocationUITests" */;
 			buildPhases = (
+				E529D03CB80E47652079A88A /* 📦 Check Pods Manifest.lock */,
 				F22D70231CF77BD3007DD024 /* Sources */,
 				F22D70241CF77BD3007DD024 /* Frameworks */,
 				F22D70251CF77BD3007DD024 /* Resources */,
+				BEBF6F33BA458604388EBBA4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +298,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5125307FDACF4A4877BF237A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodCollocation/Pods-FoodCollocation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F7968CF86AF5E9A36B91317 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodCollocationTests/Pods-FoodCollocationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F977C614A517DD82E4BA3F5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodCollocationTests/Pods-FoodCollocationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEBF6F33BA458604388EBBA4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodCollocationUITests/Pods-FoodCollocationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C976BC60B5DB3F27E41AC2EE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E529D03CB80E47652079A88A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE03694C5005C49E27567DB8 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodCollocation/Pods-FoodCollocation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F263D76998C83013CF4A2454 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F22D70041CF77BD3007DD024 /* Sources */ = {
@@ -397,6 +568,7 @@
 		};
 		F22D70311CF77BD3007DD024 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36368EE9A13AB01A34D65B95 /* Pods-FoodCollocation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FoodCollocation/Info.plist;
@@ -408,6 +580,7 @@
 		};
 		F22D70321CF77BD3007DD024 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D79BE659D65CD3875D6DF242 /* Pods-FoodCollocation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FoodCollocation/Info.plist;
@@ -419,6 +592,7 @@
 		};
 		F22D70341CF77BD3007DD024 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC23F74DC83213704C5B7A02 /* Pods-FoodCollocationTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FoodCollocationTests/Info.plist;
@@ -431,6 +605,7 @@
 		};
 		F22D70351CF77BD3007DD024 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B165A35B60F86052FADFF02A /* Pods-FoodCollocationTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FoodCollocationTests/Info.plist;
@@ -443,6 +618,7 @@
 		};
 		F22D70371CF77BD3007DD024 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F627496606E6A330038B6319 /* Pods-FoodCollocationUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FoodCollocationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -454,6 +630,7 @@
 		};
 		F22D70381CF77BD3007DD024 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F445EE8F04C4DA37B78E661 /* Pods-FoodCollocationUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FoodCollocationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -482,6 +659,7 @@
 				F22D70321CF77BD3007DD024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F22D70331CF77BD3007DD024 /* Build configuration list for PBXNativeTarget "FoodCollocationTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +668,7 @@
 				F22D70351CF77BD3007DD024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F22D70361CF77BD3007DD024 /* Build configuration list for PBXNativeTarget "FoodCollocationUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +677,7 @@
 				F22D70381CF77BD3007DD024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
