@@ -17,6 +17,10 @@
 		F22D70161CF77BD3007DD024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22D70141CF77BD3007DD024 /* LaunchScreen.storyboard */; };
 		F22D70211CF77BD3007DD024 /* FoodCollocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D70201CF77BD3007DD024 /* FoodCollocationTests.swift */; };
 		F22D702C1CF77BD3007DD024 /* FoodCollocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D702B1CF77BD3007DD024 /* FoodCollocationUITests.swift */; };
+		F28BAE561CF8B87100FB2441 /* FoodPurpose.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE551CF8B87100FB2441 /* FoodPurpose.swift */; };
+		F2BE29621CF7A51900448451 /* PurposeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE29611CF7A51900448451 /* PurposeCell.swift */; };
+		F2EDEC711CF79C9E00FDF816 /* FoodPurposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EDEC701CF79C9E00FDF816 /* FoodPurposeController.swift */; };
+		F2EDEC741CF79CE400FDF816 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EDEC731CF79CE400FDF816 /* NavController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		F22D70271CF77BD3007DD024 /* FoodCollocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodCollocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22D702B1CF77BD3007DD024 /* FoodCollocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollocationUITests.swift; sourceTree = "<group>"; };
 		F22D702D1CF77BD3007DD024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F28BAE551CF8B87100FB2441 /* FoodPurpose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPurpose.swift; sourceTree = "<group>"; };
+		F2BE29611CF7A51900448451 /* PurposeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurposeCell.swift; sourceTree = "<group>"; };
+		F2EDEC701CF79C9E00FDF816 /* FoodPurposeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPurposeController.swift; sourceTree = "<group>"; };
+		F2EDEC731CF79CE400FDF816 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		F627496606E6A330038B6319 /* Pods-FoodCollocationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocationUITests/Pods-FoodCollocationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,8 +135,9 @@
 		F22D700A1CF77BD3007DD024 /* FoodCollocation */ = {
 			isa = PBXGroup;
 			children = (
+				F2EDEC6D1CF7911500FDF816 /* Controller */,
+				F2EDEC6C1CF77E4800FDF816 /* Model */,
 				F22D700B1CF77BD3007DD024 /* AppDelegate.swift */,
-				F22D700D1CF77BD3007DD024 /* ViewController.swift */,
 				F22D700F1CF77BD3007DD024 /* Main.storyboard */,
 				F22D70121CF77BD3007DD024 /* Assets.xcassets */,
 				F22D70141CF77BD3007DD024 /* LaunchScreen.storyboard */,
@@ -163,6 +172,49 @@
 				ABB2B03C48970D7F6C8F1A3B /* Pods_FoodCollocationUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2BE295D1CF7A44100448451 /* FoodPurpose */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE295E1CF7A45000448451 /* Cell */,
+				F2EDEC701CF79C9E00FDF816 /* FoodPurposeController.swift */,
+			);
+			name = FoodPurpose;
+			sourceTree = "<group>";
+		};
+		F2BE295E1CF7A45000448451 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE29611CF7A51900448451 /* PurposeCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F2EDEC6C1CF77E4800FDF816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F28BAE551CF8B87100FB2441 /* FoodPurpose.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F2EDEC6D1CF7911500FDF816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE295D1CF7A44100448451 /* FoodPurpose */,
+				F2EDEC721CF79CBF00FDF816 /* NavController */,
+				F22D700D1CF77BD3007DD024 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F2EDEC721CF79CBF00FDF816 /* NavController */ = {
+			isa = PBXGroup;
+			children = (
+				F2EDEC731CF79CE400FDF816 /* NavController.swift */,
+			);
+			name = NavController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,8 +479,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28BAE561CF8B87100FB2441 /* FoodPurpose.swift in Sources */,
+				F2EDEC711CF79C9E00FDF816 /* FoodPurposeController.swift in Sources */,
+				F2BE29621CF7A51900448451 /* PurposeCell.swift in Sources */,
 				F22D700E1CF77BD3007DD024 /* ViewController.swift in Sources */,
 				F22D700C1CF77BD3007DD024 /* AppDelegate.swift in Sources */,
+				F2EDEC741CF79CE400FDF816 /* NavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
