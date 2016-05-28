@@ -18,6 +18,9 @@
 		F22D70211CF77BD3007DD024 /* FoodCollocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D70201CF77BD3007DD024 /* FoodCollocationTests.swift */; };
 		F22D702C1CF77BD3007DD024 /* FoodCollocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D702B1CF77BD3007DD024 /* FoodCollocationUITests.swift */; };
 		F28BAE561CF8B87100FB2441 /* FoodPurpose.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE551CF8B87100FB2441 /* FoodPurpose.swift */; };
+		F28BAE5B1CF8E89600FB2441 /* DetailChoiseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5A1CF8E89600FB2441 /* DetailChoiseController.swift */; };
+		F28BAE5D1CF8E92500FB2441 /* FoodChoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5C1CF8E92500FB2441 /* FoodChoise.swift */; };
+		F28BAE601CF8ECB000FB2441 /* ChoiseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */; };
 		F2BE29621CF7A51900448451 /* PurposeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE29611CF7A51900448451 /* PurposeCell.swift */; };
 		F2EDEC711CF79C9E00FDF816 /* FoodPurposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EDEC701CF79C9E00FDF816 /* FoodPurposeController.swift */; };
 		F2EDEC741CF79CE400FDF816 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EDEC731CF79CE400FDF816 /* NavController.swift */; };
@@ -63,6 +66,9 @@
 		F22D702B1CF77BD3007DD024 /* FoodCollocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollocationUITests.swift; sourceTree = "<group>"; };
 		F22D702D1CF77BD3007DD024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28BAE551CF8B87100FB2441 /* FoodPurpose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPurpose.swift; sourceTree = "<group>"; };
+		F28BAE5A1CF8E89600FB2441 /* DetailChoiseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailChoiseController.swift; sourceTree = "<group>"; };
+		F28BAE5C1CF8E92500FB2441 /* FoodChoise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoise.swift; sourceTree = "<group>"; };
+		F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiseCell.swift; sourceTree = "<group>"; };
 		F2BE29611CF7A51900448451 /* PurposeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurposeCell.swift; sourceTree = "<group>"; };
 		F2EDEC701CF79C9E00FDF816 /* FoodPurposeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPurposeController.swift; sourceTree = "<group>"; };
 		F2EDEC731CF79CE400FDF816 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
@@ -174,13 +180,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F2BE295D1CF7A44100448451 /* FoodPurpose */ = {
+		F28BAE571CF8D37C00FB2441 /* DetailChoiseController */ = {
+			isa = PBXGroup;
+			children = (
+				F28BAE5E1CF8EC8E00FB2441 /* Cell */,
+				F28BAE5A1CF8E89600FB2441 /* DetailChoiseController.swift */,
+			);
+			name = DetailChoiseController;
+			sourceTree = "<group>";
+		};
+		F28BAE5E1CF8EC8E00FB2441 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F2BE295D1CF7A44100448451 /* FoodPurposeController */ = {
 			isa = PBXGroup;
 			children = (
 				F2BE295E1CF7A45000448451 /* Cell */,
 				F2EDEC701CF79C9E00FDF816 /* FoodPurposeController.swift */,
 			);
-			name = FoodPurpose;
+			name = FoodPurposeController;
 			sourceTree = "<group>";
 		};
 		F2BE295E1CF7A45000448451 /* Cell */ = {
@@ -195,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				F28BAE551CF8B87100FB2441 /* FoodPurpose.swift */,
+				F28BAE5C1CF8E92500FB2441 /* FoodChoise.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -202,7 +226,8 @@
 		F2EDEC6D1CF7911500FDF816 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F2BE295D1CF7A44100448451 /* FoodPurpose */,
+				F28BAE571CF8D37C00FB2441 /* DetailChoiseController */,
+				F2BE295D1CF7A44100448451 /* FoodPurposeController */,
 				F2EDEC721CF79CBF00FDF816 /* NavController */,
 				F22D700D1CF77BD3007DD024 /* ViewController.swift */,
 			);
@@ -481,9 +506,12 @@
 			files = (
 				F28BAE561CF8B87100FB2441 /* FoodPurpose.swift in Sources */,
 				F2EDEC711CF79C9E00FDF816 /* FoodPurposeController.swift in Sources */,
+				F28BAE5B1CF8E89600FB2441 /* DetailChoiseController.swift in Sources */,
 				F2BE29621CF7A51900448451 /* PurposeCell.swift in Sources */,
+				F28BAE601CF8ECB000FB2441 /* ChoiseCell.swift in Sources */,
 				F22D700E1CF77BD3007DD024 /* ViewController.swift in Sources */,
 				F22D700C1CF77BD3007DD024 /* AppDelegate.swift in Sources */,
+				F28BAE5D1CF8E92500FB2441 /* FoodChoise.swift in Sources */,
 				F2EDEC741CF79CE400FDF816 /* NavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

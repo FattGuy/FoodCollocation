@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonClicked(sender: UIButton) {
-        self.performSegueWithIdentifier("toSecondPageSegue", sender: sender)
+        self.performSegueWithIdentifier("toFoodPurpose", sender: sender)
     }
 }
 

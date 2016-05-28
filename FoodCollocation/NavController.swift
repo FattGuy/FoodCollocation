@@ -14,6 +14,10 @@ class NavController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let backBarButtonItem = UIBarButtonItem.init(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        navigationBar.topItem?.backBarButtonItem = backBarButtonItem
+        self.navigationBar.tintColor = UIColor.redColor()
+        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor()]
     }
 
     override func didReceiveMemoryWarning() {

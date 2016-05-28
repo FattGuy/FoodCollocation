@@ -1,18 +1,15 @@
 //
-//  FoodPurposeController.swift
+//  DetailChoiseController.swift
 //  FoodCollocation
 //
-//  Created by Feng Chang on 5/26/16.
+//  Created by Feng Chang on 5/27/16.
 //  Copyright © 2016 Feng Chang. All rights reserved.
 //
 
 import UIKit
 
-class FoodPurposeController: UITableViewController {
-    
-    var foodPurposeList: Array<FoodPurpose> = []
-    
-    
+class DetailChoiseController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +18,6 @@ class FoodPurposeController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        createPurposes()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,44 +29,24 @@ class FoodPurposeController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        
-        return foodPurposeList.count
+        return 0
     }
 
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: PurposeCell = tableView.dequeueReusableCellWithIdentifier("PurposeCell", forIndexPath: indexPath) as! PurposeCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
         // Configure the cell...
-        cell.setCellValue(foodPurposeList[indexPath.row])
-        
+
         return cell
     }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("toDetailChoise", sender: indexPath)
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    }
-    
-    func createPurposes() {
-        let health = FoodPurpose(purpose: "Health")
-        let taste = FoodPurpose(purpose: "Taste")
-        let death = FoodPurpose(purpose: "Death")
-        
-        foodPurposeList += [health, taste, death]
-    }
+    */
 
-    @IBAction func backToFirstPage(sender: UIBarButtonItem) {
-        let firstController: ViewController = self.storyboard!.instantiateViewControllerWithIdentifier("FirstController") as! ViewController
-        //loginController.isFromLogOut = true;
-        self.navigationController?.presentViewController(firstController, animated: true, completion: {
-            
-        })
-    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
