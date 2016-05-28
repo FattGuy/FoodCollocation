@@ -49,20 +49,16 @@
                                         <color key="backgroundColor" red="1" green="0.61912546493537668" blue="0.54014686584046145" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="e93-ZF-9gC"/>
-                                            <constraint firstAttribute="height" constant="50" id="hTy-jB-nqB"/>
                                         </constraints>
                                         <state key="normal" title="Lunch"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="e93-ZF-9gC"/>
-                                                <exclude reference="hTy-jB-nqB"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="100" width="200" height="50"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="e93-ZF-9gC"/>
-                                                <include reference="hTy-jB-nqB"/>
                                             </mask>
                                         </variation>
                                         <connections>
@@ -83,8 +79,7 @@
                                                 <exclude reference="Fw1-qZ-3PF"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="200" width="200" height="6"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="6OX-c3-8fh"/>
                                                 <include reference="Fw1-qZ-3PF"/>
@@ -97,18 +92,15 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="kWW-oS-NmW"/>
-                                    <constraint firstAttribute="height" constant="250" id="uOh-92-s91"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="kWW-oS-NmW"/>
-                                        <exclude reference="uOh-92-s91"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" axis="vertical">
                                     <mask key="constraints">
                                         <include reference="kWW-oS-NmW"/>
-                                        <include reference="uOh-92-s91"/>
                                     </mask>
                                 </variation>
                             </stackView>
