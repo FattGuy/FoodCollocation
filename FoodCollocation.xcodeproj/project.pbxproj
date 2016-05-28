@@ -10,19 +10,18 @@
 		1D71D4CC9DB6F81805EE650B /* Pods_FoodCollocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8860EDF2B09B313C449FEBA /* Pods_FoodCollocation.framework */; };
 		238E827C1C2D2FB673FD5ED5 /* Pods_FoodCollocationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB2B03C48970D7F6C8F1A3B /* Pods_FoodCollocationUITests.framework */; };
 		AF56A0D08BC4D4766B39C9D7 /* Pods_FoodCollocationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6013CD54540DFBF48BE7C832 /* Pods_FoodCollocationTests.framework */; };
+		B36604F21CF949ED00E53A2E /* FoodPurposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36604F11CF949ED00E53A2E /* FoodPurposeController.swift */; };
+		B36604F51CF94B0C00E53A2E /* FoodTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36604F41CF94B0C00E53A2E /* FoodTimeController.swift */; };
+		B36604F71CF9512E00E53A2E /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36604F61CF9512E00E53A2E /* Food.swift */; };
 		F22D700C1CF77BD3007DD024 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D700B1CF77BD3007DD024 /* AppDelegate.swift */; };
-		F22D700E1CF77BD3007DD024 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D700D1CF77BD3007DD024 /* ViewController.swift */; };
 		F22D70111CF77BD3007DD024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22D700F1CF77BD3007DD024 /* Main.storyboard */; };
 		F22D70131CF77BD3007DD024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22D70121CF77BD3007DD024 /* Assets.xcassets */; };
 		F22D70161CF77BD3007DD024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22D70141CF77BD3007DD024 /* LaunchScreen.storyboard */; };
 		F22D70211CF77BD3007DD024 /* FoodCollocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D70201CF77BD3007DD024 /* FoodCollocationTests.swift */; };
 		F22D702C1CF77BD3007DD024 /* FoodCollocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D702B1CF77BD3007DD024 /* FoodCollocationUITests.swift */; };
-		F28BAE561CF8B87100FB2441 /* FoodPurpose.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE551CF8B87100FB2441 /* FoodPurpose.swift */; };
 		F28BAE5B1CF8E89600FB2441 /* DetailChoiseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5A1CF8E89600FB2441 /* DetailChoiseController.swift */; };
 		F28BAE5D1CF8E92500FB2441 /* FoodChoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5C1CF8E92500FB2441 /* FoodChoise.swift */; };
 		F28BAE601CF8ECB000FB2441 /* ChoiseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */; };
-		F2BE29621CF7A51900448451 /* PurposeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE29611CF7A51900448451 /* PurposeCell.swift */; };
-		F2EDEC711CF79C9E00FDF816 /* FoodPurposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EDEC701CF79C9E00FDF816 /* FoodPurposeController.swift */; };
 		F2EDEC741CF79CE400FDF816 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EDEC731CF79CE400FDF816 /* NavController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,12 +48,14 @@
 		6013CD54540DFBF48BE7C832 /* Pods_FoodCollocationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodCollocationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB2B03C48970D7F6C8F1A3B /* Pods_FoodCollocationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodCollocationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B165A35B60F86052FADFF02A /* Pods-FoodCollocationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocationTests/Pods-FoodCollocationTests.release.xcconfig"; sourceTree = "<group>"; };
+		B36604F11CF949ED00E53A2E /* FoodPurposeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPurposeController.swift; sourceTree = "<group>"; };
+		B36604F41CF94B0C00E53A2E /* FoodTimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTimeController.swift; sourceTree = "<group>"; };
+		B36604F61CF9512E00E53A2E /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		C8860EDF2B09B313C449FEBA /* Pods_FoodCollocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodCollocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79BE659D65CD3875D6DF242 /* Pods-FoodCollocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocation.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocation/Pods-FoodCollocation.release.xcconfig"; sourceTree = "<group>"; };
 		DC23F74DC83213704C5B7A02 /* Pods-FoodCollocationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocationTests/Pods-FoodCollocationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F22D70081CF77BD3007DD024 /* FoodCollocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodCollocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22D700B1CF77BD3007DD024 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F22D700D1CF77BD3007DD024 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F22D70101CF77BD3007DD024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F22D70121CF77BD3007DD024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F22D70151CF77BD3007DD024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,12 +66,9 @@
 		F22D70271CF77BD3007DD024 /* FoodCollocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodCollocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22D702B1CF77BD3007DD024 /* FoodCollocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollocationUITests.swift; sourceTree = "<group>"; };
 		F22D702D1CF77BD3007DD024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F28BAE551CF8B87100FB2441 /* FoodPurpose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPurpose.swift; sourceTree = "<group>"; };
 		F28BAE5A1CF8E89600FB2441 /* DetailChoiseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailChoiseController.swift; sourceTree = "<group>"; };
 		F28BAE5C1CF8E92500FB2441 /* FoodChoise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoise.swift; sourceTree = "<group>"; };
 		F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiseCell.swift; sourceTree = "<group>"; };
-		F2BE29611CF7A51900448451 /* PurposeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurposeCell.swift; sourceTree = "<group>"; };
-		F2EDEC701CF79C9E00FDF816 /* FoodPurposeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPurposeController.swift; sourceTree = "<group>"; };
 		F2EDEC731CF79CE400FDF816 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		F627496606E6A330038B6319 /* Pods-FoodCollocationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocationUITests/Pods-FoodCollocationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +112,22 @@
 				4F445EE8F04C4DA37B78E661 /* Pods-FoodCollocationUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B36604F01CF9497200E53A2E /* FoodPurposeController */ = {
+			isa = PBXGroup;
+			children = (
+				B36604F11CF949ED00E53A2E /* FoodPurposeController.swift */,
+			);
+			name = FoodPurposeController;
+			sourceTree = "<group>";
+		};
+		B36604F31CF94AF000E53A2E /* FoodTimeController */ = {
+			isa = PBXGroup;
+			children = (
+				B36604F41CF94B0C00E53A2E /* FoodTimeController.swift */,
+			);
+			name = FoodTimeController;
 			sourceTree = "<group>";
 		};
 		F22D6FFF1CF77BD3007DD024 = {
@@ -197,28 +211,11 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
-		F2BE295D1CF7A44100448451 /* FoodPurposeController */ = {
-			isa = PBXGroup;
-			children = (
-				F2BE295E1CF7A45000448451 /* Cell */,
-				F2EDEC701CF79C9E00FDF816 /* FoodPurposeController.swift */,
-			);
-			name = FoodPurposeController;
-			sourceTree = "<group>";
-		};
-		F2BE295E1CF7A45000448451 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				F2BE29611CF7A51900448451 /* PurposeCell.swift */,
-			);
-			name = Cell;
-			sourceTree = "<group>";
-		};
 		F2EDEC6C1CF77E4800FDF816 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F28BAE551CF8B87100FB2441 /* FoodPurpose.swift */,
 				F28BAE5C1CF8E92500FB2441 /* FoodChoise.swift */,
+				B36604F61CF9512E00E53A2E /* Food.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -226,10 +223,10 @@
 		F2EDEC6D1CF7911500FDF816 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B36604F31CF94AF000E53A2E /* FoodTimeController */,
+				B36604F01CF9497200E53A2E /* FoodPurposeController */,
 				F28BAE571CF8D37C00FB2441 /* DetailChoiseController */,
-				F2BE295D1CF7A44100448451 /* FoodPurposeController */,
 				F2EDEC721CF79CBF00FDF816 /* NavController */,
-				F22D700D1CF77BD3007DD024 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -504,14 +501,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F28BAE561CF8B87100FB2441 /* FoodPurpose.swift in Sources */,
-				F2EDEC711CF79C9E00FDF816 /* FoodPurposeController.swift in Sources */,
 				F28BAE5B1CF8E89600FB2441 /* DetailChoiseController.swift in Sources */,
-				F2BE29621CF7A51900448451 /* PurposeCell.swift in Sources */,
 				F28BAE601CF8ECB000FB2441 /* ChoiseCell.swift in Sources */,
-				F22D700E1CF77BD3007DD024 /* ViewController.swift in Sources */,
 				F22D700C1CF77BD3007DD024 /* AppDelegate.swift in Sources */,
+				B36604F21CF949ED00E53A2E /* FoodPurposeController.swift in Sources */,
 				F28BAE5D1CF8E92500FB2441 /* FoodChoise.swift in Sources */,
+				B36604F71CF9512E00E53A2E /* Food.swift in Sources */,
+				B36604F51CF94B0C00E53A2E /* FoodTimeController.swift in Sources */,
 				F2EDEC741CF79CE400FDF816 /* NavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

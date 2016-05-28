@@ -1,5 +1,5 @@
 //
-//  FoodPurposeController.swift
+//  FoodTimeController.swift
 //  FoodCollocation
 //
 //  Created by Feng Chang on 5/27/16.
@@ -8,22 +8,12 @@
 
 import UIKit
 
-class FoodPurposeController: UIViewController {
+class FoodTimeController: UIViewController {
 
-    @IBOutlet weak var healthButton: UIButton!
-    @IBOutlet weak var tasteButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        healthButton.layer.masksToBounds = true
-        healthButton.layer.cornerRadius = 10
-        healthButton.layer.borderWidth = 1.0
-        
-        tasteButton.layer.masksToBounds = true
-        tasteButton.layer.cornerRadius = 10
-        tasteButton.layer.borderWidth = 1.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,10 +22,9 @@ class FoodPurposeController: UIViewController {
     }
     
     @IBAction func buttonPressed(sender: UIButton) {
-        self.performSegueWithIdentifier("toFoodTime", sender: sender)
+        self.performSegueWithIdentifier("toDetailChoiseSegue", sender: sender)
     }
-    
-    
+
     /*
     // MARK: - Navigation
 

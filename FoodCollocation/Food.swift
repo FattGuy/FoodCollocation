@@ -1,5 +1,5 @@
 //
-//  FoodPurpose.swift
+//  Food.swift
 //  FoodCollocation
 //
 //  Created by Feng Chang on 5/27/16.
@@ -8,11 +8,8 @@
 
 import UIKit
 
-class FoodPurpose: NSObject {
-
-    var purpose: String?
+class Food: NSObject {
     
-    init(purpose: String) {
-        self.purpose = purpose
-    }
+    var calorie: Int?
+    
 }

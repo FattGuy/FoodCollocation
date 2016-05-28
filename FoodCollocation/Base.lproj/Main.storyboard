@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hky-tG-cO3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eAg-cu-Cip">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Food Time Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="FirstController" id="BYZ-38-t0r" customClass="ViewController" customModule="FoodCollocation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstController" id="BYZ-38-t0r" customClass="FoodTimeController" customModule="FoodCollocation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,111 +24,139 @@
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
                                         <color key="backgroundColor" red="0.80424375394743153" green="0.27698211853528132" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Hg7-1r-K2f"/>
-                                            <constraint firstAttribute="width" constant="200" id="yPC-ni-ZlN"/>
+                                            <constraint firstAttribute="width" constant="200" id="GPj-Lg-Rv9"/>
+                                            <constraint firstAttribute="height" constant="50" id="aiv-rc-GnV"/>
                                         </constraints>
                                         <state key="normal" title="Breakfirst"/>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="Hg7-1r-K2f"/>
-                                                <exclude reference="yPC-ni-ZlN"/>
+                                                <exclude reference="GPj-Lg-Rv9"/>
+                                                <exclude reference="aiv-rc-GnV"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
                                             <mask key="constraints">
-                                                <include reference="Hg7-1r-K2f"/>
-                                                <include reference="yPC-ni-ZlN"/>
+                                                <include reference="GPj-Lg-Rv9"/>
+                                                <include reference="aiv-rc-GnV"/>
                                             </mask>
                                         </variation>
                                         <connections>
                                             <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Kz-vZ-3ME"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gA3-n5-eNd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoM-Vz-osc">
                                         <rect key="frame" x="116" y="0.0" width="43" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.61912546493537668" blue="0.54014686584046145" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="e93-ZF-9gC"/>
+                                            <constraint firstAttribute="height" constant="50" id="1dK-TD-R7v"/>
+                                            <constraint firstAttribute="width" constant="200" id="cEE-e3-OFs"/>
                                         </constraints>
                                         <state key="normal" title="Lunch"/>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="e93-ZF-9gC"/>
+                                                <exclude reference="1dK-TD-R7v"/>
+                                                <exclude reference="cEE-e3-OFs"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
                                             <mask key="constraints">
-                                                <include reference="e93-ZF-9gC"/>
+                                                <include reference="1dK-TD-R7v"/>
+                                                <include reference="cEE-e3-OFs"/>
                                             </mask>
                                         </variation>
                                         <connections>
                                             <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8I3-3s-qwR"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KRH-Wi-SKd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eQ-Yd-yfj">
                                         <rect key="frame" x="209" y="0.0" width="45" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="6OX-c3-8fh"/>
-                                            <constraint firstAttribute="width" constant="200" id="Fw1-qZ-3PF"/>
+                                            <constraint firstAttribute="height" constant="50" id="JZl-Qc-mFx"/>
+                                            <constraint firstAttribute="width" constant="200" id="Jyp-DO-ifR"/>
                                         </constraints>
                                         <state key="normal" title="Dinner"/>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="6OX-c3-8fh"/>
-                                                <exclude reference="Fw1-qZ-3PF"/>
+                                                <exclude reference="JZl-Qc-mFx"/>
+                                                <exclude reference="Jyp-DO-ifR"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
                                             <mask key="constraints">
-                                                <include reference="6OX-c3-8fh"/>
-                                                <include reference="Fw1-qZ-3PF"/>
+                                                <include reference="JZl-Qc-mFx"/>
+                                                <include reference="Jyp-DO-ifR"/>
                                             </mask>
                                         </variation>
                                         <connections>
                                             <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k3H-8j-1zp"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0u-KI-jEn"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="kWW-oS-NmW"/>
+                                    <constraint firstAttribute="width" constant="200" id="ABr-JK-E2E"/>
+                                    <constraint firstAttribute="trailing" secondItem="LaP-4b-xuG" secondAttribute="trailing" id="EMO-Fr-SyM"/>
+                                    <constraint firstItem="LaP-4b-xuG" firstAttribute="top" secondItem="Rze-gp-jrs" secondAttribute="top" id="FGY-DE-qr6"/>
+                                    <constraint firstAttribute="bottom" secondItem="2eQ-Yd-yfj" secondAttribute="bottom" id="HCs-a5-OOm"/>
+                                    <constraint firstAttribute="trailing" secondItem="2eQ-Yd-yfj" secondAttribute="trailing" id="Hhd-iD-HDs"/>
+                                    <constraint firstItem="LaP-4b-xuG" firstAttribute="leading" secondItem="Rze-gp-jrs" secondAttribute="leading" id="IBI-U1-ipe"/>
+                                    <constraint firstAttribute="height" constant="250" id="SNC-LR-zPi"/>
+                                    <constraint firstItem="2eQ-Yd-yfj" firstAttribute="leading" secondItem="Rze-gp-jrs" secondAttribute="leading" id="bLH-BJ-8pd"/>
+                                    <constraint firstAttribute="trailing" secondItem="HoM-Vz-osc" secondAttribute="trailing" id="m8G-Xu-FKs"/>
+                                    <constraint firstItem="HoM-Vz-osc" firstAttribute="leading" secondItem="Rze-gp-jrs" secondAttribute="leading" id="v1V-CK-YpN"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="kWW-oS-NmW"/>
+                                        <exclude reference="ABr-JK-E2E"/>
+                                        <exclude reference="SNC-LR-zPi"/>
+                                        <exclude reference="EMO-Fr-SyM"/>
+                                        <exclude reference="FGY-DE-qr6"/>
+                                        <exclude reference="IBI-U1-ipe"/>
+                                        <exclude reference="m8G-Xu-FKs"/>
+                                        <exclude reference="v1V-CK-YpN"/>
+                                        <exclude reference="HCs-a5-OOm"/>
+                                        <exclude reference="Hhd-iD-HDs"/>
+                                        <exclude reference="bLH-BJ-8pd"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" axis="vertical">
                                     <mask key="constraints">
-                                        <include reference="kWW-oS-NmW"/>
+                                        <include reference="ABr-JK-E2E"/>
+                                        <include reference="SNC-LR-zPi"/>
+                                        <include reference="EMO-Fr-SyM"/>
+                                        <include reference="FGY-DE-qr6"/>
+                                        <include reference="IBI-U1-ipe"/>
+                                        <include reference="m8G-Xu-FKs"/>
+                                        <include reference="v1V-CK-YpN"/>
+                                        <include reference="HCs-a5-OOm"/>
+                                        <include reference="Hhd-iD-HDs"/>
+                                        <include reference="bLH-BJ-8pd"/>
                                     </mask>
                                 </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Rze-gp-jrs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="F8R-JN-f9F"/>
-                            <constraint firstItem="Rze-gp-jrs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="155" id="Lpm-qO-NbC"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rze-gp-jrs" secondAttribute="bottom" constant="175" id="Mmf-48-tYS"/>
-                            <constraint firstAttribute="trailing" secondItem="Rze-gp-jrs" secondAttribute="trailing" constant="100" id="o17-SZ-BxJ"/>
+                            <constraint firstItem="Rze-gp-jrs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AZ9-B1-iTs"/>
+                            <constraint firstItem="Rze-gp-jrs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RmD-2s-PUV"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="F8R-JN-f9F"/>
-                                <exclude reference="Lpm-qO-NbC"/>
-                                <exclude reference="o17-SZ-BxJ"/>
-                                <exclude reference="Mmf-48-tYS"/>
+                                <exclude reference="AZ9-B1-iTs"/>
+                                <exclude reference="RmD-2s-PUV"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="F8R-JN-f9F"/>
-                                <include reference="Lpm-qO-NbC"/>
-                                <include reference="o17-SZ-BxJ"/>
-                                <include reference="Mmf-48-tYS"/>
+                                <include reference="AZ9-B1-iTs"/>
+                                <include reference="RmD-2s-PUV"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Hzv-V8-06A"/>
                     <connections>
                         <segue destination="GfF-Ws-FZm" kind="show" identifier="toDetailPurpose" id="gXt-ky-XwP"/>
                     </connections>
@@ -137,67 +165,16 @@
             </objects>
             <point key="canvasLocation" x="2131.5" y="-377"/>
         </scene>
-        <!--Food Purpose-->
-        <scene sceneID="WE7-GP-5Dk">
-            <objects>
-                <tableViewController id="hky-tG-cO3" customClass="FoodPurposeController" customModule="FoodCollocation" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="WcU-4B-C8b">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PurposeCell" textLabel="fuw-Az-eWb" rowHeight="60" style="IBUITableViewCellStyleDefault" id="qXy-9Y-j82" customClass="PurposeCell" customModule="FoodCollocation" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qXy-9Y-j82" id="hm1-Jk-o19">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fuw-Az-eWb">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="59.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact">
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            </variation>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="hky-tG-cO3" id="fCt-VI-QpC"/>
-                            <outlet property="delegate" destination="hky-tG-cO3" id="hE2-Th-qd1"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Food Purpose" id="w3t-Yq-Uy8">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="fUo-LW-0hf">
-                            <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="backToFirstPage:" destination="hky-tG-cO3" id="uEh-ol-Obf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <segue destination="gd3-tZ-cRS" kind="presentation" identifier="toFoodTime" id="9RO-LI-z3s"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xyb-6Z-vRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="400.5" y="-377"/>
-        </scene>
         <!--Detail Choise-->
         <scene sceneID="l4s-n1-1wp">
             <objects>
                 <tableViewController id="GfF-Ws-FZm" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dvy-hP-Nlo">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="dvy-hP-Nlo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Kgq-SL-KLa">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChoiseCell" rowHeight="60" id="Kgq-SL-KLa">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kgq-SL-KLa" id="fqb-vh-5MC">
@@ -217,6 +194,69 @@
             </objects>
             <point key="canvasLocation" x="2965.5" y="-377"/>
         </scene>
+        <!--Food Purpose Controller-->
+        <scene sceneID="oiu-rT-7oH">
+            <objects>
+                <viewController id="eAg-cu-Cip" customClass="FoodPurposeController" customModule="FoodCollocation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eya-yg-wVl"/>
+                        <viewControllerLayoutGuide type="bottom" id="RMc-Cv-xXL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qJS-Yh-rYZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUa-JL-zAH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Health">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="20" width="360" height="273"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="eAg-cu-Cip" eventType="touchUpInside" id="JGB-Er-nhl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjx-4d-ShQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Taste">
+                                    <color key="titleColor" red="1" green="0.25164278848359423" blue="0.16972256436809696" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="301" width="360" height="279"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="eAg-cu-Cip" eventType="touchUpInside" id="it4-gt-qte"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gUa-JL-zAH"/>
+                                <exclude reference="Rjx-4d-ShQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="gUa-JL-zAH"/>
+                                <include reference="Rjx-4d-ShQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="healthButton" destination="gUa-JL-zAH" id="7GV-1C-tg1"/>
+                        <outlet property="tasteButton" destination="Rjx-4d-ShQ" id="whq-Kn-068"/>
+                        <segue destination="gd3-tZ-cRS" kind="presentation" identifier="toFoodTime" id="JC9-Km-BKX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S5c-yw-0HL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550.5" y="-377"/>
+        </scene>
         <!--Nav Controller-->
         <scene sceneID="TSh-JH-8ta">
             <objects>
@@ -228,7 +268,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="toFoodTime" id="9HF-ye-g5I"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qeS-oR-cCq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGt-TS-g7d" userLabel="First Responder" sceneMemberID="firstResponder"/>

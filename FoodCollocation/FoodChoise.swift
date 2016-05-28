@@ -8,11 +8,12 @@
 
 import UIKit
 
-class FoodChoise: NSObject {
+class FoodChoise: Food {
     var health: String?
     var taste: String?
     
     init(health: String, taste: String) {
+        
         self.health = health
         self.taste = taste
     }
