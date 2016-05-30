@@ -13,6 +13,9 @@
 		B36604F21CF949ED00E53A2E /* FoodPurposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36604F11CF949ED00E53A2E /* FoodPurposeController.swift */; };
 		B36604F51CF94B0C00E53A2E /* FoodTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36604F41CF94B0C00E53A2E /* FoodTimeController.swift */; };
 		B36604F71CF9512E00E53A2E /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36604F61CF9512E00E53A2E /* Food.swift */; };
+		B3D0B6D11CFBE294000257BE /* Vegetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B6D01CFBE294000257BE /* Vegetable.swift */; };
+		B3D0B6D31CFBE2A3000257BE /* Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B6D21CFBE2A3000257BE /* Meat.swift */; };
+		B3D0B6D51CFBE2B8000257BE /* Snack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B6D41CFBE2B8000257BE /* Snack.swift */; };
 		F22D700C1CF77BD3007DD024 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D700B1CF77BD3007DD024 /* AppDelegate.swift */; };
 		F22D70111CF77BD3007DD024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22D700F1CF77BD3007DD024 /* Main.storyboard */; };
 		F22D70131CF77BD3007DD024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22D70121CF77BD3007DD024 /* Assets.xcassets */; };
@@ -20,7 +23,6 @@
 		F22D70211CF77BD3007DD024 /* FoodCollocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D70201CF77BD3007DD024 /* FoodCollocationTests.swift */; };
 		F22D702C1CF77BD3007DD024 /* FoodCollocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D702B1CF77BD3007DD024 /* FoodCollocationUITests.swift */; };
 		F28BAE5B1CF8E89600FB2441 /* DetailChoiseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5A1CF8E89600FB2441 /* DetailChoiseController.swift */; };
-		F28BAE5D1CF8E92500FB2441 /* FoodChoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5C1CF8E92500FB2441 /* FoodChoise.swift */; };
 		F28BAE601CF8ECB000FB2441 /* ChoiseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */; };
 		F2EDEC741CF79CE400FDF816 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EDEC731CF79CE400FDF816 /* NavController.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,9 @@
 		B36604F11CF949ED00E53A2E /* FoodPurposeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPurposeController.swift; sourceTree = "<group>"; };
 		B36604F41CF94B0C00E53A2E /* FoodTimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTimeController.swift; sourceTree = "<group>"; };
 		B36604F61CF9512E00E53A2E /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		B3D0B6D01CFBE294000257BE /* Vegetable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vegetable.swift; sourceTree = "<group>"; };
+		B3D0B6D21CFBE2A3000257BE /* Meat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meat.swift; sourceTree = "<group>"; };
+		B3D0B6D41CFBE2B8000257BE /* Snack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snack.swift; sourceTree = "<group>"; };
 		C8860EDF2B09B313C449FEBA /* Pods_FoodCollocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodCollocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79BE659D65CD3875D6DF242 /* Pods-FoodCollocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocation.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocation/Pods-FoodCollocation.release.xcconfig"; sourceTree = "<group>"; };
 		DC23F74DC83213704C5B7A02 /* Pods-FoodCollocationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocationTests/Pods-FoodCollocationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,7 +72,6 @@
 		F22D702B1CF77BD3007DD024 /* FoodCollocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollocationUITests.swift; sourceTree = "<group>"; };
 		F22D702D1CF77BD3007DD024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28BAE5A1CF8E89600FB2441 /* DetailChoiseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailChoiseController.swift; sourceTree = "<group>"; };
-		F28BAE5C1CF8E92500FB2441 /* FoodChoise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodChoise.swift; sourceTree = "<group>"; };
 		F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiseCell.swift; sourceTree = "<group>"; };
 		F2EDEC731CF79CE400FDF816 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		F627496606E6A330038B6319 /* Pods-FoodCollocationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocationUITests/Pods-FoodCollocationUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,8 +218,10 @@
 		F2EDEC6C1CF77E4800FDF816 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F28BAE5C1CF8E92500FB2441 /* FoodChoise.swift */,
 				B36604F61CF9512E00E53A2E /* Food.swift */,
+				B3D0B6D01CFBE294000257BE /* Vegetable.swift */,
+				B3D0B6D21CFBE2A3000257BE /* Meat.swift */,
+				B3D0B6D41CFBE2B8000257BE /* Snack.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -502,10 +508,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28BAE5B1CF8E89600FB2441 /* DetailChoiseController.swift in Sources */,
+				B3D0B6D11CFBE294000257BE /* Vegetable.swift in Sources */,
 				F28BAE601CF8ECB000FB2441 /* ChoiseCell.swift in Sources */,
 				F22D700C1CF77BD3007DD024 /* AppDelegate.swift in Sources */,
+				B3D0B6D51CFBE2B8000257BE /* Snack.swift in Sources */,
+				B3D0B6D31CFBE2A3000257BE /* Meat.swift in Sources */,
 				B36604F21CF949ED00E53A2E /* FoodPurposeController.swift in Sources */,
-				F28BAE5D1CF8E92500FB2441 /* FoodChoise.swift in Sources */,
 				B36604F71CF9512E00E53A2E /* Food.swift in Sources */,
 				B36604F51CF94B0C00E53A2E /* FoodTimeController.swift in Sources */,
 				F2EDEC741CF79CE400FDF816 /* NavController.swift in Sources */,

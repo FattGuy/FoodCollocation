@@ -9,7 +9,12 @@
 import UIKit
 
 class DetailChoiseController: UITableViewController {
-
+    
+    var cabbage = Vegetable(name: "cabbage", calorie: 100)
+    var beef = Meat(name: "beef", calorie: 100)
+    var candy = Snack(name: "candy", calorie: 100)
+    var choises: Array<Food> = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +23,9 @@ class DetailChoiseController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        choises.append(cabbage)
+        choises.append(beef)
+        choises.append(candy)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +37,22 @@ class DetailChoiseController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell: ChoiseCell = tableView.dequeueReusableCellWithIdentifier("ChoiseCell", forIndexPath: indexPath) as! ChoiseCell
 
-        // Configure the cell...
+         // Configure the cell...
+        cell.setCellValue(cabbage, meat: beef, snack: candy)
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
