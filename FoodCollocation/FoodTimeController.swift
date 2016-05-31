@@ -20,7 +20,8 @@ class FoodTimeController: UIViewController {
 
         // Do any additional setup after loading the view.
         //breakfirstButton.layer.masksToBounds = true
-        breakfirstButton.layer.mask = shapeButton()
+        breakfirstButton.layer.masksToBounds = true
+        breakfirstButton.layer.cornerRadius = 10
         breakfirstButton.layer.borderWidth = 1.0
         
         lunchButton.layer.masksToBounds = true
@@ -28,6 +29,8 @@ class FoodTimeController: UIViewController {
         lunchButton.layer.borderWidth = 1.0
         
         dinnerButton.layer.masksToBounds = true
+        dinnerButton.layer.cornerRadius = 10
+        dinnerButton.layer.borderWidth = 1.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,14 +42,6 @@ class FoodTimeController: UIViewController {
         self.performSegueWithIdentifier("toDetailChoise", sender: sender)
     }
 
-    func shapeButton() -> CAShapeLayer {
-        let buttonShape = CAShapeLayer()
-        let bepath:UIBezierPath = UIBezierPath(roundedRect: buttonShape.bounds, byRoundingCorners: UIRectCorner.TopLeft, cornerRadii: CGSize(width: 2.5, height: 2.5))
-        UIColor.yellowColor().setStroke()
-        buttonShape.path = bepath.CGPath
-        
-        return buttonShape
-    }
     /*
     // MARK: - Navigation
 

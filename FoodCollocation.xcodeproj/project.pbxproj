@@ -24,6 +24,10 @@
 		F22D702C1CF77BD3007DD024 /* FoodCollocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D702B1CF77BD3007DD024 /* FoodCollocationUITests.swift */; };
 		F28BAE5B1CF8E89600FB2441 /* DetailChoiseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5A1CF8E89600FB2441 /* DetailChoiseController.swift */; };
 		F28BAE601CF8ECB000FB2441 /* ChoiseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */; };
+		F2DCFD391CFDEAE000CDC55B /* MOCK_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = F2DCFD381CFDEAE000CDC55B /* MOCK_DATA.json */; };
+		F2DCFD3B1CFDEB3900CDC55B /* APIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DCFD3A1CFDEB3900CDC55B /* APIInterface.swift */; };
+		F2DCFD3D1CFDEC6400CDC55B /* BaseHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DCFD3C1CFDEC6400CDC55B /* BaseHttpRequest.swift */; };
+		F2DCFD401CFDF7D100CDC55B /* FoodClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DCFD3F1CFDF7D100CDC55B /* FoodClient.swift */; };
 		F2EDEC741CF79CE400FDF816 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EDEC731CF79CE400FDF816 /* NavController.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +77,10 @@
 		F22D702D1CF77BD3007DD024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28BAE5A1CF8E89600FB2441 /* DetailChoiseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailChoiseController.swift; sourceTree = "<group>"; };
 		F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiseCell.swift; sourceTree = "<group>"; };
+		F2DCFD381CFDEAE000CDC55B /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
+		F2DCFD3A1CFDEB3900CDC55B /* APIInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInterface.swift; sourceTree = "<group>"; };
+		F2DCFD3C1CFDEC6400CDC55B /* BaseHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHttpRequest.swift; sourceTree = "<group>"; };
+		F2DCFD3F1CFDF7D100CDC55B /* FoodClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodClient.swift; sourceTree = "<group>"; };
 		F2EDEC731CF79CE400FDF816 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		F627496606E6A330038B6319 /* Pods-FoodCollocationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodCollocationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodCollocationUITests/Pods-FoodCollocationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +167,8 @@
 		F22D700A1CF77BD3007DD024 /* FoodCollocation */ = {
 			isa = PBXGroup;
 			children = (
+				F2DCFD371CFDEAC800CDC55B /* MockData */,
+				F2DCFD361CFDE8A800CDC55B /* GateWay */,
 				F2EDEC6D1CF7911500FDF816 /* Controller */,
 				F2EDEC6C1CF77E4800FDF816 /* Model */,
 				F22D700B1CF77BD3007DD024 /* AppDelegate.swift */,
@@ -213,6 +223,32 @@
 				F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		F2DCFD361CFDE8A800CDC55B /* GateWay */ = {
+			isa = PBXGroup;
+			children = (
+				F2DCFD3E1CFDF7B900CDC55B /* Client */,
+				F2DCFD3A1CFDEB3900CDC55B /* APIInterface.swift */,
+				F2DCFD3C1CFDEC6400CDC55B /* BaseHttpRequest.swift */,
+			);
+			name = GateWay;
+			sourceTree = "<group>";
+		};
+		F2DCFD371CFDEAC800CDC55B /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				F2DCFD381CFDEAE000CDC55B /* MOCK_DATA.json */,
+			);
+			name = MockData;
+			sourceTree = "<group>";
+		};
+		F2DCFD3E1CFDF7B900CDC55B /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				F2DCFD3F1CFDF7D100CDC55B /* FoodClient.swift */,
+			);
+			name = Client;
 			sourceTree = "<group>";
 		};
 		F2EDEC6C1CF77E4800FDF816 /* Model */ = {
@@ -358,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F22D70161CF77BD3007DD024 /* LaunchScreen.storyboard in Resources */,
+				F2DCFD391CFDEAE000CDC55B /* MOCK_DATA.json in Resources */,
 				F22D70131CF77BD3007DD024 /* Assets.xcassets in Resources */,
 				F22D70111CF77BD3007DD024 /* Main.storyboard in Resources */,
 			);
@@ -508,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28BAE5B1CF8E89600FB2441 /* DetailChoiseController.swift in Sources */,
+				F2DCFD401CFDF7D100CDC55B /* FoodClient.swift in Sources */,
 				B3D0B6D11CFBE294000257BE /* Vegetable.swift in Sources */,
 				F28BAE601CF8ECB000FB2441 /* ChoiseCell.swift in Sources */,
 				F22D700C1CF77BD3007DD024 /* AppDelegate.swift in Sources */,
@@ -515,7 +553,9 @@
 				B3D0B6D31CFBE2A3000257BE /* Meat.swift in Sources */,
 				B36604F21CF949ED00E53A2E /* FoodPurposeController.swift in Sources */,
 				B36604F71CF9512E00E53A2E /* Food.swift in Sources */,
+				F2DCFD3D1CFDEC6400CDC55B /* BaseHttpRequest.swift in Sources */,
 				B36604F51CF94B0C00E53A2E /* FoodTimeController.swift in Sources */,
+				F2DCFD3B1CFDEB3900CDC55B /* APIInterface.swift in Sources */,
 				F2EDEC741CF79CE400FDF816 /* NavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
