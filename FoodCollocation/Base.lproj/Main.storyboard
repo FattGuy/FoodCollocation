@@ -3,10 +3,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Food Time Controller-->
+        <!--Food Time-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="FirstController" id="BYZ-38-t0r" customClass="FoodTimeController" customModule="FoodCollocation" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="right" ambiguous="YES" misplaced="YES" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Rze-gp-jrs">
-                                <rect key="frame" x="157" y="111" width="254" height="30"/>
+                                <rect key="frame" x="157" y="111" width="282" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaP-4b-xuG">
-                                        <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="78" height="34"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="GPj-Lg-Rv9"/>
@@ -48,7 +49,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoM-Vz-osc">
-                                        <rect key="frame" x="116" y="0.0" width="43" height="30"/>
+                                        <rect key="frame" x="128" y="0.0" width="50" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.61912546493537668" blue="0.54014686584046145" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="1dK-TD-R7v"/>
@@ -74,7 +75,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eQ-Yd-yfj">
-                                        <rect key="frame" x="209" y="0.0" width="45" height="30"/>
+                                        <rect key="frame" x="228" y="0.0" width="54" height="34"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="JZl-Qc-mFx"/>
@@ -160,7 +161,14 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="Hzv-V8-06A"/>
+                    <navigationItem key="navigationItem" title="Food Time" id="IDc-Yt-8n1">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="tIm-o6-9SR">
+                            <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="buttonPressed:" destination="BYZ-38-t0r" id="4qi-Dg-Iiw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="breakfirstButton" destination="LaP-4b-xuG" id="osI-b6-u7R"/>
                         <outlet property="dinnerButton" destination="2eQ-Yd-yfj" id="TA1-hR-ZJN"/>
@@ -450,20 +458,48 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUa-JL-zAH">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="273" id="ShH-Kl-6hB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Health">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ShH-Kl-6hB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ShH-Kl-6hB"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="buttonPressed:" destination="eAg-cu-Cip" eventType="touchUpInside" id="JGB-Er-nhl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjx-4d-ShQ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="279" id="fD6-Sr-pJG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Taste">
                                     <color key="titleColor" red="1" green="0.25164278848359423" blue="0.16972256436809696" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fD6-Sr-pJG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="fD6-Sr-pJG"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="buttonPressed:" destination="eAg-cu-Cip" eventType="touchUpInside" id="it4-gt-qte"/>
                                 </connections>
@@ -471,8 +507,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gUa-JL-zAH" firstAttribute="top" secondItem="eya-yg-wVl" secondAttribute="bottom" id="FZb-nh-iMi"/>
-                            <constraint firstItem="Rjx-4d-ShQ" firstAttribute="top" secondItem="gUa-JL-zAH" secondAttribute="bottom" constant="8" symbolic="YES" id="GaH-ap-ktK"/>
                             <constraint firstItem="gUa-JL-zAH" firstAttribute="centerY" secondItem="qJS-Yh-rYZ" secondAttribute="centerY" constant="-143.5" id="LlD-zW-JO9"/>
                             <constraint firstItem="Rjx-4d-ShQ" firstAttribute="leading" secondItem="qJS-Yh-rYZ" secondAttribute="leadingMargin" id="bVE-hg-MhA"/>
                             <constraint firstAttribute="bottom" secondItem="Rjx-4d-ShQ" secondAttribute="bottom" constant="20" symbolic="YES" id="coR-bL-r3U"/>
@@ -486,14 +520,12 @@
                                 <exclude reference="Rjx-4d-ShQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="FZb-nh-iMi"/>
-                                <exclude reference="LlD-zW-JO9"/>
-                                <exclude reference="xmH-B0-4se"/>
-                                <exclude reference="GaH-ap-ktK"/>
                                 <exclude reference="bVE-hg-MhA"/>
                                 <exclude reference="coR-bL-r3U"/>
                                 <exclude reference="ma3-3g-KqQ"/>
                                 <exclude reference="vxX-Sq-TkT"/>
+                                <exclude reference="LlD-zW-JO9"/>
+                                <exclude reference="xmH-B0-4se"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -502,14 +534,12 @@
                                 <include reference="Rjx-4d-ShQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="FZb-nh-iMi"/>
-                                <include reference="LlD-zW-JO9"/>
-                                <include reference="xmH-B0-4se"/>
-                                <include reference="GaH-ap-ktK"/>
                                 <include reference="bVE-hg-MhA"/>
                                 <include reference="coR-bL-r3U"/>
                                 <include reference="ma3-3g-KqQ"/>
                                 <include reference="vxX-Sq-TkT"/>
+                                <include reference="LlD-zW-JO9"/>
+                                <include reference="xmH-B0-4se"/>
                             </mask>
                         </variation>
                     </view>

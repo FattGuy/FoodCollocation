@@ -229,8 +229,8 @@
 		F2EDEC6D1CF7911500FDF816 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B36604F31CF94AF000E53A2E /* FoodTimeController */,
 				B36604F01CF9497200E53A2E /* FoodPurposeController */,
+				B36604F31CF94AF000E53A2E /* FoodTimeController */,
 				F28BAE571CF8D37C00FB2441 /* DetailChoiseController */,
 				F2EDEC721CF79CBF00FDF816 /* NavController */,
 			);
