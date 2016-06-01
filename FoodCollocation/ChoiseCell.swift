@@ -26,14 +26,10 @@ class ChoiseCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func setCellValue(vegetable: Vegetable, meat: Meat, snack: Snack) {
-        vegeLabel.text = vegetable.name
-        meatLalel.text = meat.name
-        snackLabel.text = snack.name
-
-        let foodCalorie = vegetable.calorie! + meat.calorie! + snack.calorie!
+    func setCellValue(food: Food) {
         
-        calorieLabel.text = String(foodCalorie)
+        vegeLabel.text = food.name
+        calorieLabel.text = String(food.calorie)
      }
     
 }

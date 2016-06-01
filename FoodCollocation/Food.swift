@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import Gloss
 
-class Food: NSObject {
+class Food: Decodable {
     
     var calorie: Int?
     var name: String?
     
-    init(name: String, calorie: Int) {
-        self.name = name
-        self.calorie = calorie
+    required init?(json: JSON) {
+        self.calorie = "calorie" <~~ json
+        self.name = "name" <~~ json
     }
 }
