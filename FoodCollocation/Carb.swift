@@ -1,15 +1,15 @@
 //
-//  Meat.swift
+//  Carb.swift
 //  FoodCollocation
 //
-//  Created by Feng Chang on 5/29/16.
+//  Created by Feng Chang on 6/9/16.
 //  Copyright © 2016 Feng Chang. All rights reserved.
 //
 
 import UIKit
 import Gloss
 
-class Meat: Decodable {
+class Carb: Decodable {
     var name: String?
     var calorie: String?
     

@@ -10,7 +10,7 @@ import UIKit
 
 class DetailChoiseController: UITableViewController {
     
-    var choises: Array<Food> = []
+    var searchResult = SearchResult()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,21 +37,21 @@ class DetailChoiseController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return choises.count
+        return 1
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: ChoiseCell = tableView.dequeueReusableCellWithIdentifier("ChoiseCell", forIndexPath: indexPath) as! ChoiseCell
 
          // Configure the cell...
-        cell.setCellValue(choises[indexPath.row])
+        cell.setCellValue(searchResult)
 
         return cell
     }
 
     func loadData() {
-        FoodClient.getFoodList { (success) in
-            self.choises = success
+        SearchResultClient.getSearchResultList { (result, error) in
+            self.searchResult = SearchResult(json: result)
         }
     }
     
