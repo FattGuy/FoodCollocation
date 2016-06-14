@@ -51,7 +51,7 @@ class DetailChoiseController: UITableViewController {
 
     func loadData() {
         SearchResultClient.getSearchResultList { (result, error) in
-            self.searchResult = SearchResult(json: result)
+            self.searchResult = result! as SearchResult
         }
     }
     
