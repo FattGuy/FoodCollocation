@@ -7,15 +7,18 @@
 //
 
 import UIKit
-import Gloss
 
-class Food: Decodable {
+class Food: NSObject {
     
-    var calorie: Int?
-    var name: String?
+    var meats = [String]?()
+    var veges = [String]?()
+    var carbs = [String]?()
+    var snacks = [String]?()
     
-    required init?(json: JSON) {
-        self.calorie = "calorie" <~~ json
-        self.name = "name" <~~ json
+    override init() {
+        self.meats = ["beef"]
+        self.carbs = ["rice"]
+        self.veges = ["cabbage"]
+        self.snacks = ["chocolate"]
     }
 }

@@ -7,7 +7,14 @@
 //
 
 import UIKit
+import Gloss
 
-class Vegetable: Food {
+class Vegetable: Decodable {
+    var name: String?
+    var calorie: String?
     
+    required init?(json: JSON) {
+        self.name = "item_name" <~~ json
+        self.calorie = "nf_calories" <~~ json
+    }
 }
