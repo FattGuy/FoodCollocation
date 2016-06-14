@@ -19,7 +19,7 @@ class BaseHttpRequest: NSObject {
         BaseHttpRequest.requestManager.request(.GET, url as String).responseJSON { (response) in
             do {
                 let jsonData = try NSJSONSerialization.JSONObjectWithData(response.data!, options: NSJSONReadingOptions.AllowFragments)
-                completion(response: jsonData as? SearchResult, error: nil)
+                completion(response: jsonData, error: nil)
             } catch {
                 let standardError = MMErrorEngine().standardError(response)
                 standardError.networkError = error as NSError
