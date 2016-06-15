@@ -12,10 +12,10 @@ import Foundation
 class APIInterface: NSObject {
     
     static let HOST = "https://api.nutritionix.com/v1_1/"
-    static let SEARCH_API = "search"
-    static let ITEM_API = "item"
+    static let SEARCH_API = "search/"
+    static let ITEM_API = "item?id="
     
-    static let SEARCH_RANGE = "?results=0%3A10"//0-1
+    static let SEARCH_RANGE = "?results=0%3A1"//0-1
     static let APPID = "&appId=209897d3"
     static let APPKEY = "&appKey=6e68497f5d5a32517608ea097a738bec"
     

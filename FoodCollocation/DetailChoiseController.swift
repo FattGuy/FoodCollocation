@@ -11,6 +11,9 @@ import UIKit
 class DetailChoiseController: UITableViewController {
     
     var searchResult = SearchResult()
+    var foodHits = [FoodHits]()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,16 @@ class DetailChoiseController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         self.loadData()
+    }
+    
+    func loadData() {
+        SearchResultClient.getSearchResultListForBeef { [weak self] (result, error) in
+            self!.searchResult = result! as SearchResult
+            FoodFieldClient.getFieldForFood(self!.searchResult.hits![0].id) { [weak self] (result, error) in
+                self!.foodHits = result! as [FoodHits]
+                self!.tableView.reloadData()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,12 +62,6 @@ class DetailChoiseController: UITableViewController {
         return cell
     }
 
-    func loadData() {
-        SearchResultClient.getSearchResultList { (result, error) in
-            self.searchResult = result! as SearchResult
-        }
-    }
-    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

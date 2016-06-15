@@ -10,8 +10,8 @@ import UIKit
 import Gloss
 
 class SearchResult: Decodable {
-    var totalhits: Double?
-    var maxscore: Double?
+    var totalhits: Double!
+    var maxscore: Double!
     var hits = [FoodHits]?()
     
     init(){

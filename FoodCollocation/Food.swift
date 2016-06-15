@@ -10,15 +10,15 @@ import UIKit
 
 class Food: NSObject {
     
-    var meats = [String]?()
-    var veges = [String]?()
-    var carbs = [String]?()
-    var snacks = [String]?()
-    
-    override init() {
-        self.meats = ["beef"]
-        self.carbs = ["rice"]
-        self.veges = ["cabbage"]
-        self.snacks = ["chocolate"]
-    }
+//    var meats = [String]?()
+//    var veges = [String]?()
+//    var carbs = [String]?()
+//    var snacks = [String]?()
+//    
+//    override init() {
+//        self.meats = ["beef"]
+//        self.carbs = ["rice"]
+//        self.veges = ["cabbage"]
+//        self.snacks = ["chocolate"]
+//    }
 }

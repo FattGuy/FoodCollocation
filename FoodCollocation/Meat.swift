@@ -11,7 +11,11 @@ import Gloss
 
 class Meat: Decodable {
     var name: String?
-    var calorie: String?
+    var calorie: Double?
+    
+    init() {
+        
+    }
     
     required init?(json: JSON) {
         self.name = "item_name" <~~ json
