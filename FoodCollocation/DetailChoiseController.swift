@@ -44,7 +44,7 @@ class DetailChoiseController: UITableViewController {
         let cell: ChoiseCell = tableView.dequeueReusableCellWithIdentifier("ChoiseCell", forIndexPath: indexPath) as! ChoiseCell
 
          // Configure the cell...
-        cell.setCellValue(searchResult)
+        cell.setCellValue(self.searchResult)
 
         return cell
     }
