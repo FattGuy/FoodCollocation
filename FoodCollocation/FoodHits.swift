@@ -14,7 +14,11 @@ class FoodHits: Decodable {
     var type: String?
     var id: String?
     var score: Double?
-    var fields = [Meat]?()
+    var fields = FoodField?()
+    
+    init() {
+        
+    }
 
     required init?(json: JSON) {
         self.index = "_index" <~~ json

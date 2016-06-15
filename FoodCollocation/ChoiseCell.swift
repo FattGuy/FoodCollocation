@@ -26,10 +26,9 @@ class ChoiseCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func setCellValue(searchResult: SearchResult) {
+    func setCellValue(foodHits: [FoodHits]!) {
         
-        vegeLabel.text = String(searchResult.totalhits)
-        calorieLabel.text = String(searchResult.maxscore)
+        vegeLabel.text = String(foodHits)
      }
     
 }
