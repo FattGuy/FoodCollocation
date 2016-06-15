@@ -29,7 +29,6 @@
 		F28BAE5B1CF8E89600FB2441 /* DetailChoiseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5A1CF8E89600FB2441 /* DetailChoiseController.swift */; };
 		F28BAE601CF8ECB000FB2441 /* ChoiseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */; };
 		F293707E1D109FA000EA0730 /* FoodField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293707D1D109FA000EA0730 /* FoodField.swift */; };
-		F29370801D10A42800EA0730 /* FoodFieldClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293707F1D10A42800EA0730 /* FoodFieldClient.swift */; };
 		F2B2636D1D105C29009CF60B /* MeatCatogory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2636C1D105C29009CF60B /* MeatCatogory.swift */; };
 		F2B2636F1D106679009CF60B /* VegeCatogory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2636E1D106679009CF60B /* VegeCatogory.swift */; };
 		F2B263711D106696009CF60B /* CarbCatogory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B263701D106696009CF60B /* CarbCatogory.swift */; };
@@ -92,7 +91,6 @@
 		F28BAE5A1CF8E89600FB2441 /* DetailChoiseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailChoiseController.swift; sourceTree = "<group>"; };
 		F28BAE5F1CF8ECB000FB2441 /* ChoiseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiseCell.swift; sourceTree = "<group>"; };
 		F293707D1D109FA000EA0730 /* FoodField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodField.swift; sourceTree = "<group>"; };
-		F293707F1D10A42800EA0730 /* FoodFieldClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodFieldClient.swift; sourceTree = "<group>"; };
 		F2B2636C1D105C29009CF60B /* MeatCatogory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatCatogory.swift; sourceTree = "<group>"; };
 		F2B2636E1D106679009CF60B /* VegeCatogory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegeCatogory.swift; sourceTree = "<group>"; };
 		F2B263701D106696009CF60B /* CarbCatogory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarbCatogory.swift; sourceTree = "<group>"; };
@@ -275,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				F21F32891D09EE3B00B767D9 /* SearchResultClient.swift */,
-				F293707F1D10A42800EA0730 /* FoodFieldClient.swift */,
 			);
 			name = Client;
 			sourceTree = "<group>";
@@ -584,7 +581,6 @@
 				B3D0B6D11CFBE294000257BE /* Vegetable.swift in Sources */,
 				F28BAE601CF8ECB000FB2441 /* ChoiseCell.swift in Sources */,
 				F2B2636F1D106679009CF60B /* VegeCatogory.swift in Sources */,
-				F29370801D10A42800EA0730 /* FoodFieldClient.swift in Sources */,
 				F22D700C1CF77BD3007DD024 /* AppDelegate.swift in Sources */,
 				F2B263731D1066B0009CF60B /* SnackCatogory.swift in Sources */,
 				B3D0B6D51CFBE2B8000257BE /* Snack.swift in Sources */,

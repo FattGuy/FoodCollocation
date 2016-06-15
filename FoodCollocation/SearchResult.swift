@@ -12,7 +12,7 @@ import Gloss
 class SearchResult: Decodable {
     var totalhits: Double!
     var maxscore: Double!
-    var hits = [FoodHits]?()
+    var hits: [FoodHits]?
     
     init(){
         

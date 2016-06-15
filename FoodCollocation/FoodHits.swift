@@ -14,7 +14,7 @@ class FoodHits: Decodable {
     var type: String?
     var id: String?
     var score: Double?
-    var fields = FoodField?()
+    var fields: FoodField?
     
     init() {
         

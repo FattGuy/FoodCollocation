@@ -12,6 +12,7 @@ class DetailChoiseController: UITableViewController {
     
     var searchResult = SearchResult()
     var foodHits = [FoodHits]()
+    var foodField = FoodField()
     
     
     
@@ -29,10 +30,10 @@ class DetailChoiseController: UITableViewController {
     func loadData() {
         SearchResultClient.getSearchResultListForBeef { [weak self] (result, error) in
             self!.searchResult = result! as SearchResult
-            FoodFieldClient.getFieldForFood(self!.searchResult.hits![0].id) { [weak self] (result, error) in
-                self!.foodHits = result! as [FoodHits]
-                self!.tableView.reloadData()
-            }
+            self!.foodHits = self!.searchResult.hits!
+            self!.foodField = self!.foodHits[0].fields!
+            
+            self!.tableView.reloadData()
         }
     }
 
